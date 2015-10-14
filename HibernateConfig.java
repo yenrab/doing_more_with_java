@@ -63,8 +63,7 @@ public class HibernateConfig
  * There have been several changes to the Hibernate libraries.
  * Please uncomment the source code for the version of Hibernate you are using.
 */
-         /*Hibernate 4.3 - 5.x */ //ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().applySettings(
-                config.getProperties()).build();
+         /*Hibernate 4.3 - 5.x */ //ServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().applySettings(config.getProperties()).build();
         /*Hibernate 3.x - 4.2*/ ServiceRegistry serviceRegistry = new ServiceRegistryBuilder().applySettings(config.getProperties()).buildServiceRegistry();
 
         sessionFactory = config.buildSessionFactory(serviceRegistry);
