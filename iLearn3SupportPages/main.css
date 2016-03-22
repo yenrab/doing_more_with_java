@@ -11,6 +11,7 @@
 }
 .supportMaterialsTable{
 	margin: .5em 0 1em;
+	border:1px solid black;
 	border-bottom: 3px solid #d9d9d9;
 	border-left: 1px solid #d9d9d9;
 	margin: 0px;
