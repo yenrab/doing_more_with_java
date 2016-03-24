@@ -4,9 +4,12 @@ td{
 	border-top: 1px solid #d9d9d9;
 	border-right: 1px solid #d9d9d9;
 }
+body{
+	font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
 
 .titleLeft{
-	font-family: "Palatino Linotype", Georgia, Times, serif;
+	font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
 	font-size: 250%;
 	font-weight: normal;
 	margin: 10px 0 20px;
@@ -32,7 +35,7 @@ td{
 }
 
 #thinkList{
-	font-family: "Palatino Linotype", Georgia, Times, serif;
+	font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
 	font-size: 125%;
 	font-weight:bold;
 }
@@ -75,12 +78,11 @@ td{
 	font-size:50px; 
 }
 #barneyBody { 
-	overflow:auto;
-
+	overflow: scroll;
 }
 #barneySidebar { 
 	position: fixed; 
-	width:150px;  
+	width:15%;  
 	height:100%;
 	color:white;
 	background-color: black;
@@ -88,7 +90,10 @@ td{
 }
 #barneyMain{
 	position:fixed;
-	left:150px;
-	width:100%;
+	right:0px;
+	width:85%;
 	padding-left: 5px;
+	font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	font-style: normal;
 }
