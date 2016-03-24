@@ -103,5 +103,6 @@ body{
 	right:0px;
 	width:85%;
 	padding-left: 5px;
+	padding-right: 5px;
 	overflow-y: scroll;
 }
