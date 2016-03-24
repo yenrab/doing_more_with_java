@@ -93,6 +93,7 @@ body{
 	font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
 	font-size: 12px;
 	font-style: normal;
+	padding-left: 10px;
 }
 #scrollContainer{
 	position:fixed;
