@@ -1,0 +1,22 @@
+<html>
+
+<body>
+<iframe src="http://yenrab.github.io/doing_more_with_java/iLearn3SupportPages/Ophelia.html"></iframe>
+
+<div id="yenrab_display"></div>
+<script>
+
+var dataRequester = new XMLHttpRequest()
+dataRequester.onreadystatechange = function() {
+	console.log(dataRequester.readyState+" "+dataRequester.status)
+  if (dataRequester.readyState == 4 && dataRequester.status == 200) {
+  	console.log("yenrab")
+    document.getElementById("yenrab_display").innerHTML = dataRequester.responseText;
+  }
+}
+
+dataRequester.open("GET", "http://yenrab.github.io/doing_more_with_java/iLearn3SupportPages/Ophelia.html", true);
+dataRequester.send();
+</script>
+</body>
+</html>

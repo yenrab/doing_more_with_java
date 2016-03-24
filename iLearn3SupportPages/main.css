@@ -1,3 +1,10 @@
+td{
+	text-align: left;
+	padding: .2em .4em;
+	border-top: 1px solid #d9d9d9;
+	border-right: 1px solid #d9d9d9;
+}
+
 .titleLeft{
 	font-family: "Palatino Linotype", Georgia, Times, serif;
 	font-size: 250%;
@@ -11,8 +18,21 @@
 }
 .supportMaterialsTable{
 	margin: .5em 0 1em;
-	border:1px solid black;
 	border-bottom: 3px solid #d9d9d9;
 	border-left: 1px solid #d9d9d9;
 	margin: 0px;
 }
+.bookTitle{
+	font-style:italic;
+	font-weight:bold;
+}
+.preparednessCells{
+	color: white; 
+	background-color: #646464;
+}
+#thinkList{
+	font-family: "Palatino Linotype", Georgia, Times, serif;
+	font-size: 125%;
+	font-weight:bold;
+}
+
