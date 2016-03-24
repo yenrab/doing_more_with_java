@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<script>
+		function firstFill(){
+			var dataRequester = new XMLHttpRequest()
+			dataRequester.onreadystatechange = function() {
+			  if (dataRequester.readyState == 4 && dataRequester.status == 200) {
+			  	console.log("yenrab")
+			    document.getElementById("barneyMain").innerHTML = dataRequester.responseText;
+			  }
+			}
+
+			dataRequester.open("GET", "360Description.html", true);
+			dataRequester.send();
+		}
+	</script>
+</head>
+
+<body onload="firstFill()">
+<div id="barneyWrap">
+    <div id="barneyHeader"> 
+    	<div id="tagLine"> Software is Everywhere</div>
+  		<div id="className">Object Oriented Software Development</div>
+    </div>
+    <div id="barneyBody">
+        <div id="barneySidebar"> SIDEBAR </div>
+        <div id="barneyMain"> MAIN CONTENT </div>        
+    </div>
+</div>
+</body>
+</html>
