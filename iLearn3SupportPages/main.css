@@ -95,9 +95,7 @@ body{
 	font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
 	font-size: 12px;
 	font-style: normal;
-	padding-left: 10px;
-	overflow-y: scroll;
-}
+	padding-left: 10px;}
 #scrollContainer{
 	right:0px;
 	width:85%;
