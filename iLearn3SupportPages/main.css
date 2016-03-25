@@ -77,6 +77,7 @@ body{
 	background-color: black;
 	color: rgb(255, 255, 255);
 	font-size:50px; 
+	position:fixed;
 }
 #barneyBody { 
 	overflow-y: scroll;
