@@ -74,13 +74,12 @@ body{
 	overflow-y: scroll;
 }
 #barneyHeader {
+	position:fixed;
 	background-color: black;
 	color: rgb(255, 255, 255);
 	font-size:50px; 
-	position:fixed;
 }
 #barneyBody { 
-	overflow-y: scroll;
 }
 #barneySidebar { 
 	position: fixed; 
@@ -98,6 +97,7 @@ body{
 	font-size: 12px;
 	font-style: normal;
 	padding-left: 10px;
+	background-color: yellow;
 }
 #scrollContainer{
 	right:0px;
