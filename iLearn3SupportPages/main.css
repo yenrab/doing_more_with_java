@@ -115,6 +115,7 @@ figcaption{
 	font-size: 12px;
 	font-style: normal;
 	padding-left: 10px;
+	padding-right:10px;
 }
 #scrollContainer{
 	position: relative;
