@@ -5,7 +5,8 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<script>
-		function firstFill(){
+			
+		function load(toLoad){
 			var dataRequester = new XMLHttpRequest()
 			dataRequester.onreadystatechange = function() {
 			  if (dataRequester.readyState == 4 && dataRequester.status == 200) {
@@ -14,20 +15,28 @@
 			  }
 			}
 
-			dataRequester.open("GET", "360Description.html", true);
+			dataRequester.open("GET", toLoad+".html", true);
 			dataRequester.send();
 		}
 	</script>
 </head>
 
-<body onload="firstFill()">
+<body onload="load('360Description')">
 <div id="barneyWrap">
     <div id="barneyHeader"> 
     	<div id="tagLine"> Software is Everywhere</div>
   		<div id="className">CIT-360</div>
     </div>
     <div id="barneyBody">
-        <div id="barneySidebar"> SIDEBAR </div>
+        <div id="barneySidebar"> 
+        	<table>
+        		<tr><td><figure><img onclick="load('360Description')" src="class.png"/><figcaption>course</figcaption></figure></td></tr>
+        		<tr><td><img onclick="load('syllabus')" src="syllabus.png"/><figcaption>syllabus</figcaption></td></tr>
+        		<tr><td><img onclick="load('how_much_time')" src="time-commitment.png"/><figcaption>time commitment</figcaption></td></tr>
+        		<tr><td><img onclick="load('dealing_with_assessments')" src="success.png"/><figcaption>being successful</figcaption></td></tr>
+        		<tr><td><img onclick="load('ophelia')" src="ophelia.png"/><figcaption>ophelia syndrome</figcaption></td></tr>
+        	</table>
+        </div>
         <div id="scrollContainer"> 
         	<div id="barneyMain">MAIN CONTENT</div>    
         </div>    

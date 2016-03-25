@@ -7,6 +7,9 @@ td{
 body{
 	font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
 }
+figcaption{
+	font-size: x-small;
+}
 
 .titleLeft{
 	font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
@@ -97,6 +100,15 @@ body{
 	z-index: 1;
 	background-color: black;
 	background: linear-gradient(black,grey);
+}
+#barneySidebar table{
+	width: 100%;
+}
+#barneySidebar td{
+	border: black;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 #barneyMain{
 	font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
