@@ -91,11 +91,13 @@ body{
 }
 #barneyMain{
 	position: relative;
-	width: 100%;
+	left:15%;
+	width: 85%;
 	font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
 	font-size: 12px;
 	font-style: normal;
-	padding-left: 10px;}
+	padding-left: 10px;
+}
 #scrollContainer{
 	right:0px;
 	width:85%;
