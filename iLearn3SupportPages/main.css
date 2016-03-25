@@ -60,6 +60,7 @@ body{
 }
 #className{
 	text-align:center; 
+	height:60px;
 	background: linear-gradient(grey,black);
 }
 
@@ -75,17 +76,25 @@ body{
 }
 #barneyHeader {
 	position:fixed;
+	top:0px;
+	left:0px;
+	right: 0px;
 	background-color: black;
 	color: rgb(255, 255, 255);
 	font-size:50px; 
+	z-index: 1;
 }
 #barneyBody { 
+	position:relative;
+	top:90px; 
 }
 #barneySidebar { 
-	position: fixed; 
+	position: fixed;
+	top:95px; 
 	width:15%;  
 	height:100%;
 	color:white;
+	z-index: 1;
 	background-color: black;
 	background: linear-gradient(black,grey);
 }
@@ -94,7 +103,6 @@ body{
 	font-size: 12px;
 	font-style: normal;
 	padding-left: 10px;
-	background-color: blue;
 }
 #scrollContainer{
 	position: relative;
@@ -103,5 +111,6 @@ body{
 	right:0px;
 	width:85%;
 	padding:10px;
+	z-index: 0;
 	background-color: red;
 }
