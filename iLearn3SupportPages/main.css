@@ -116,11 +116,13 @@ figcaption{
 	font-style: normal;
 	padding-left: 10px;
 	padding-right:10px;
+	width:80%;
+	background-color: red;
 }
 #scrollContainer{
 	position: relative;
 	left:15%;
-	width: 80%;
+	width: 85%;
 	right:0px;
 	width:85%;
 	padding:10px;
