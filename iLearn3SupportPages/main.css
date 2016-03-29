@@ -120,10 +120,9 @@ figcaption{
 #scrollContainer{
 	position: relative;
 	left:15%;
-	width: 85%;
 	right:0px;
-	width:80%;
+	width:84%;
 	padding:10px;
 	z-index: 0;
-	background-color: blue;
+	background-color: red;
 }
