@@ -4,21 +4,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<link rel="stylesheet" type="text/css" href="main.css">
-	<script>
-			
-		function load(toLoad){
-			var dataRequester = new XMLHttpRequest()
-			dataRequester.onreadystatechange = function() {
-			  if (dataRequester.readyState == 4 && dataRequester.status == 200) {
-			  	console.log("yenrab")
-			    document.getElementById("barneyMain").innerHTML = dataRequester.responseText;
-			  }
-			}
-
-			dataRequester.open("GET", toLoad+".html", true);
-			dataRequester.send();
-		}
-	</script>
+	<script src="https://yenrab.github.io/doing_more_with_java/iLearn3SupportPages/loader.js"></script>
 </head>
 
 <body onload="load('360Description')">
