@@ -1,4 +1,4 @@
-function load(toLoad, customDisplayLocation, isRemoteRequst){
+function load(toLoad, customDisplayLocation, isRemoteRequst, callBack){
 			var dataRequester = new XMLHttpRequest()
 			dataRequester.onreadystatechange = function() {
 			  if (dataRequester.readyState == 4 && dataRequester.status == 200) {
@@ -7,7 +7,9 @@ function load(toLoad, customDisplayLocation, isRemoteRequst){
 			  		displayLocation = customDisplayLocation
 			  	}
 			    document.getElementById(displayLocation).innerHTML = dataRequester.responseText;
-			    console.log(document.getElementById('subSub'))
+			    if(callBack){
+			    	callBack()
+			    }
 			  }
 			}
             var prefix = ""
