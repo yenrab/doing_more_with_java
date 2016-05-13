@@ -17,7 +17,7 @@ figcaption{
 .course_map_header{
   font-weight: bold;
   font-size: 32px;
-  color:rgb(42,56,88);
+  color:white;
   background: linear-gradient(to bottom, rgb(68, 119, 198) 0%,#3f4c6b 100%);
 }
 .activity_table{
