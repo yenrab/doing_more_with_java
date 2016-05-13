@@ -14,6 +14,54 @@ body{
 figcaption{
 	font-size: x-small;
 }
+.course_map_header{
+  font-weight: bold;
+  font-size: 32px;
+  color:rgb(42,56,88);
+  background: linear-gradient(to bottom, rgb(68, 119, 198) 0%,#3f4c6b 100%);
+}
+.activity_table{
+	margin-right:30px;
+    border-collapse: collapse;
+    border: none;
+}
+.activity_table_header{
+  color:white;
+  font-weight: bold;
+  background: linear-gradient(to bottom, rgb(182,202,227) 0%,rgb(61,98,143) 100%);
+}
+.activity_table td{
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+.invisible{
+	visibility: hidden;
+}
+.activity_table_footer{
+  font-weight: bold;
+}
+.student_hours{
+  background: linear-gradient(to bottom, rgb(215,226,240) 0%,rgb(151,180,215) 100%);
+}
+.instructor_hours{
+  background: linear-gradient(to bottom, rgb(215,226,240) 0%,rgb(151,180,215) 100%);
+}
+.activity_table_footer_cell{
+  background: linear-gradient(to bottom, rgb(215,226,240) 0%,rgb(151,180,215) 100%);
+}
+.course_map{
+	padding-left:10px;
+	font-size:13px;
+}
+.borderlessTable{
+	border:none;
+}
+.bold{
+	font-weight:bold;
+}
+.borderlessTable td{
+	border:none;
+}
 
 .titleLeft{
 	font-family: 'Lucida Grande', Helvetica, Arial, sans-serif;
