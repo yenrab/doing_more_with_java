@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<script src="loader.js"></script>
 </head>
-<body onload="load('syllabus','generic_syllabus_display',null,function(){load('360_syllabus', 'specific_syllabus_display');load('outcome_list', 'outcome_display')})">
+<body onload="load('syllabus',generic_syllabus_display,null,function(){load('360_syllabus', 'specific_syllabus_display');load('outcome_list', 'outcome_display', null, function(){load('360_outcome_list', 'specific_outcomes')})})">
 	<div id="generic_syllabus_display"></div>
 </body>
 </html>
