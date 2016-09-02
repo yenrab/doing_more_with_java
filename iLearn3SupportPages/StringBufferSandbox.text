@@ -1,0 +1,131 @@
+/*
+
+    THIS IS NOT A TEMPLATE!!! Do not copy and past this file to create your own sandbox code.
+
+    Each Java class you sandbox will have a different number of methods you should play with in the sandbox. Do NOT assume
+    that your sandbox code for some other Java class should play with the same number of methods as this example.
+
+    To create sandbox code for a class, examine the class's description in the Java API. Select what you believe are
+    the most commonly used methods and play with those. After you have completed that step, contact your mentor or
+    instructor for additional ideas for what you should add to your sandbox code.
+
+    To make your sandbox code efficient for your later use, you must comment it heavily. That way you'll remember
+    what you were doing and won't have to guess.
+
+    The comments you write should include whether the specific use of the method is a happy or a nasty path. If it is a
+    nasty path you should state what terrible thing you're doing to the method.
+
+    Another comment about what happened when you abused the method in a nasty path will also help you remember what
+    happened when you abused the method. You'll see examples (NOT templates) of comments in the example below.
+
+    NEVER comment out nasty paths make them work by surrounding them with try/catch or somethign similar. Sandbox
+    code that is most efficient for your later use always runs without using input or action, without any if statements,
+    and it runs all happy and nasty paths without commenting them in and out.
+
+    You don't need to create classes and methods to write sandbox code for existing Java classes. If they are in the Java
+    API just write all of your happy and nasty paths in a main method.
+
+
+    This example shows sandbox code for the StringBuffer class as it would be submitted to your mentor or instructor
+    to get additional ideas for sandboxing. It is NOT an example of completed sandbox code.
+
+
+ */
+
+public class StringBufferSandbox {
+
+    public static void main(String[] args) {
+
+        //Sandboxing Constructor
+
+        //Happy path - construction from an existing string
+        StringBuffer sandboxBuffer = new StringBuffer("Trying this.");
+        System.out.println(sandboxBuffer);
+        //Result - writes "Trying this." to the console
+
+        //Nasty path - construction from an empy string
+        StringBuffer emptyStringTry = new StringBuffer("");
+        System.out.println(emptyStringTry);
+        //Result - writes blank lin in console
+
+        //Nasty path - construction using null string
+        try {
+            StringBuffer nullStringTry = new StringBuffer(null);
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        //Result - NullPointerException throwns
+
+
+        //Sandboxing append method
+
+        //Happy path - append a string
+        sandboxBuffer.append(" What???");
+        System.out.println(sandboxBuffer);
+        //Result- writes "Trying this. What???" to the console
+
+        //Nasty path - append empty string
+        sandboxBuffer.append("");
+        System.out.println(sandboxBuffer);
+        //Result - writes "Trying this. What??" to the console
+
+        //Nasty path - append string consisting of white space characters
+        sandboxBuffer.append("            \t\t\t\t");
+        System.out.println(sandboxBuffer);
+        //result - writes "Trying this. What??" followed by a bunch of spaces and tabs
+
+        //Nasty path - appending a null string
+        sandboxBuffer.append((String) null);
+        System.out.println(sandboxBuffer);
+        //Result - appends "null" as a string to the existing string
+
+        //Happy path - appending largest possible double
+        sandboxBuffer.append(Double.MAX_VALUE);
+        System.out.println(sandboxBuffer);
+        //Result - 1.7976931348623157E308 appended to the buffer
+
+        //Happy path - appending the Infinity double value
+        double infinity = Double.longBitsToDouble(0x7ff0000000000000L);
+        sandboxBuffer.append(infinity);
+        System.out.println(sandboxBuffer);
+        //Result - the String "Infinity" appended to the buffer
+
+
+        //Sandboxing insert method
+        
+        //Happy path - inserting String
+        sandboxBuffer.insert(15, "inny");
+        System.out.println(sandboxBuffer);
+        //Result - the string "inny" inserted into the buffer at the 15th position
+
+        //Happy path - inserting an int
+        sandboxBuffer.insert(30, 15);
+        System.out.println(sandboxBuffer);
+        //Result - the characters "15" inserted in position 30
+
+        //Happy path - inserting at the beginning of the buffer
+        sandboxBuffer.insert(0,"Start");
+        System.out.println(sandboxBuffer);
+        //Result - Inserts the string "Start" at the beginning of the buffer
+
+
+        //Nasty path - inserting in a negative postion
+        try {
+            sandboxBuffer.insert(-10, "maybe?");
+        }
+        catch(Exception e){
+            e.printStackTrace();
+        }
+        //Result - StringIndexOutOfBoundsException thrown
+
+        //Nasty path - inserting in a postion bigger than the number of characters in the buffer
+        try{
+            sandboxBuffer.insert(sandboxBuffer.length() + 13, "Way out.");
+        }
+        catch (Exception e){
+            e.printStackTrace();
+        }
+        //Result - StringIndexOutOfBoundsException thrown
+    }
+}
