@@ -1,4 +1,5 @@
 function load(toLoad, customDisplayLocation, isRemoteRequst, callBack){
+	console.log(toLoad+", "+customDisplayLocation+", "+callBack != null)
 	var dataRequester = new XMLHttpRequest()
 	dataRequester.onreadystatechange = function() {
 	  if (dataRequester.readyState == 4 && dataRequester.status == 200) {
@@ -16,6 +17,7 @@ function load(toLoad, customDisplayLocation, isRemoteRequst, callBack){
     if(isRemoteRequst){
         prefix = "https://yenrab.github.io/doing_more_with_java/iLearn3SupportPages/"
     }
+    console.log("about to load "+prefix+toLoad+".html")
 	dataRequester.open("GET", prefix+toLoad+".html", true);
 	dataRequester.send();
 }
