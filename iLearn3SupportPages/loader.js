@@ -1,5 +1,5 @@
 function load(toLoad, customDisplayLocation, isRemoteRequst, callBack){
-	console.log(toLoad+", "+customDisplayLocation+", "+callBack != null)
+	console.log(toLoad+", "+customDisplayLocation+", "+(callBack != null))
 	var dataRequester = new XMLHttpRequest()
 	dataRequester.onreadystatechange = function() {
 	  if (dataRequester.readyState == 4 && dataRequester.status == 200) {
