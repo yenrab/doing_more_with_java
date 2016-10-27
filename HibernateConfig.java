@@ -33,9 +33,10 @@ public class HibernateConfig
 
         //change the pool size to reflect how many users you expect your application to have initially
 
-        config.setProperty("hibernate.connection.pool_size", "1");
+        config.setProperty("hibernate.connection.pool_size", "10");
 
         config.setProperty("hibernate.connection.autocommit", "true");
+        config.setProperty("hibernate.id.new_generator_mappings", "false");
 
         config.setProperty("hibernate.cache.provider_class", "org.hibernate.cache.NoCacheProvider");
 
